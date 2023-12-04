@@ -2,7 +2,9 @@
 #include"file.c"
 #include"userint.c"
 #include"wellcome.c"
-void main(){
-
+#include"loag.c"
+int main(){
+    system("cls");
     well();
+    return 0;
 }
