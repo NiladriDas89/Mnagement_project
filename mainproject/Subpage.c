@@ -63,31 +63,35 @@ void subgen() {
       int match;
       printf("Enter your Code:");
       scanf("%d",&match);
-      //match==code?printf("Code valid\nApplying on your profile\nUpdate sucessfully"):printf("Not valid \n Retry again\n")&&scanf("%d",&match);
-      if (match!=code)
-      { 
-        for(int i=1;i<=2;i++){
-          printf("\033[1mNot valid\nRetry again\n\033[0m")&&scanf("%d",&match);
-         if(match==code){
-          printf("\033[1mCode valid\nApplying on your profile\nUpdate sucessfully\033[0m");
-        applying();      //need to fix bug
-      }
-         system("cls");
+      
+      while (code==match)
+      { system("pause");
+        printf("Code valid\nApplying on your profile\nUpdate sucessfully");
+        applying();
         
+      }
+      while (code!=match){
+        for(int i=1;i<=2;i++){
+            printf("Not valid \n Retry again\n");
+            scanf("%d",&match); 
+        
+            if(code==match){ 
+              printf("Code valid\n\nApplying on your profile\n");
+              system("pause");
+              applying();
+              printf("\nUpdate sucessfully\n");
+            }
+            }
+            
+            
         }
       }
-      else if(match==code){
-        printf("\033[1mCode valid\nApplying on your profile\nUpdate sucessfully\033[0m");
-        applying();      
-      }
-      else{
-        exit(match);
-      }
       
-      //return printf();
+      
+  
       
 
-}
+
 void main(){
   buysub();
 }
