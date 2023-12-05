@@ -5,16 +5,30 @@
 #include"loag.c"
 
 void subarea(){
+  system("cls");
   waitingscrn();
-
+     printf("--------------------------------------------------------------");
+        printf("\n|===============Wellcome to our C_COFFE SHOP================|\n" );
+        printf( "\n\t-------------------------------------------------------------\n");
+        printf( "\t-------------------------------------------------------------\n");
+        printf("\t||------------------Subcription buying area--------------------||\n");
+        printf( "\t||-------------------------------------------------------------||\n");
+  printf("chose your Subcriptions: \n1)1 month subcription price is 500-700 \n2)3month subcription price is 700-1000 \n3)1 Year subcription price1000-1500");
+  buysub();
+  system("cls");
 }
+/*void main(){
+  system("clear");
+  subarea();
+  system("clear");
+}*/
 
 
 
 void buysub(){
     
     int price,mont;
-    printf("Enter your Amount:");
+    printf("\nEnter your Amount:\t");
     scanf("%d",&price);
     if (price>=500&&price<=700)
     {
@@ -29,6 +43,11 @@ void buysub(){
       else if(price>=1000&&price<=1500){
         printf("This code Valid for 1 Year");
         subgen();
+      }
+      else{ 
+        printf("Eror!\nRetruning back phase:");
+        waitingscrn(); 
+        return buysub();
       }
 
 
@@ -68,7 +87,7 @@ void subgen() {
       { system("pause");
         printf("Code valid\nApplying on your profile\nUpdate sucessfully");
         applying();
-        
+        break;
       }
       while (code!=match){
         for(int i=1;i<=2;i++){
@@ -82,7 +101,7 @@ void subgen() {
               printf("\nUpdate sucessfully\n");
             }
             }
-            
+           break; 
             
         }
       }
@@ -92,6 +111,3 @@ void subgen() {
       
 
 
-void main(){
-  buysub();
-}
