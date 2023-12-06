@@ -1,41 +1,15 @@
 // C program to create loading bar 
 #include <stdio.h> 
-#include <windows.h> 
+#include <windows.h>
 
-// Function to creating loading bar 
-void loadingBar() 
-{ 
-	// 0 - black background, 
-	// A - white Foreground 
-	system("color 07"); 
 
-	// Initialize char for printing 
-	// loading bar 
-	char a = 177, b = 219; 
 
-	printf("\n\n\n\n"); 
-	printf("\n\n\n\n\t\t\t\t\t""Loading...\n\n"); 
-	printf("\t\t\t\t\t"); 
 
-	// Print initial loading bar 
-	for (int i = 0; i < 26; i++) 
-		printf("%c", a); 
 
-	// Set the cursor again starting 
-	// point of loading bar 
-	printf("\r"); 
-	printf("\t\t\t\t\t"); 
 
-	// Print loading bar progress 
-	for (int i = 0; i < 26; i++) { 
-		printf("%c", b); 
 
-		// Sleep for 1 second 
-		Sleep(600); 
-	} 
-	system("cls");
-} 
-void applying() 
+
+void applying()
 { 
 	// 0 - black background, 
 	// A - red Foreground 
@@ -67,6 +41,81 @@ void applying()
 	} 
 	system("cls");
 }
+
+void deltscr()
+{ 
+	// 0 - black background, 
+	// A - red Foreground 
+	system("color 0C"); 
+
+	// Initialize char for printing 
+	// loading bar 
+	char a = 177, b = 219; 
+
+	printf("\n\n\n\n"); 
+	printf("\n\n\n\n\t\t\t\t\t""Deleting...\n\n"); 
+	printf("\t\t\t\t\t"); 
+
+	// Print initial loading bar 
+	for (int i = 0; i < 26; i++) 
+		printf("%c", a); 
+
+	// Set the cursor again starting 
+	// point of loading bar 
+	printf("\r"); 
+	printf("\t\t\t\t\t"); 
+
+	// Print loading bar progress 
+	for (int i = 0; i < 26; i++) { 
+		printf("%c", b); 
+
+		// Sleep for 1 second 
+		Sleep(200); 
+	} 
+	system("cls");
+}
+
+void logscr()
+{ 
+	// 0 - black background, 
+	// A - red Foreground 
+	system("color 0C"); 
+
+	// Initialize char for printing 
+	// loading bar 
+	char a = 177, b = 219; 
+
+	printf("\n\n\n\n"); 
+	printf("\n\n\n\n\t\t\t\t\t""Login...\n\n"); 
+	printf("\t\t\t\t\t"); 
+
+	// Print initial loading bar 
+	for (int i = 0; i < 26; i++) 
+		printf("%c", a); 
+
+	// Set the cursor again starting 
+	// point of loading bar 
+	printf("\r"); 
+	printf("\t\t\t\t\t"); 
+
+	// Print loading bar progress 
+	for (int i = 0; i < 26; i++) { 
+		printf("%c", b); 
+
+		// Sleep for 1 second 
+		Sleep(200); 
+	} 
+	system("cls");
+}
+
+
+
+
+
+
+
+
+
 void waitingscrn() 
 { 
 	// 0 - black background, 
@@ -99,6 +148,15 @@ void waitingscrn()
 	} 
 	system("cls");
 }
+
+
+
+
+
+
+
+
+
 void acount() 
 { 
 	// 0 - black background, 
@@ -131,3 +189,12 @@ void acount()
 	} 
 	system("cls");
 }
+
+
+
+
+
+
+
+
+

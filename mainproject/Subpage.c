@@ -2,7 +2,14 @@
 #include <stdlib.h>
 #include <time.h>
 #include<windows.h>
-#include"loag.c"
+#include"load.c"
+
+
+void subgena();
+void buysub();
+void subareae();
+
+
 /* subgen() complete dont touch this code*/
 void subgena() {
 
@@ -26,6 +33,7 @@ void subgena() {
     system("pause");
     system("cls");
       int match;
+      hid:
       printf("Enter your Code:");
       scanf("%d",&match);
       
@@ -36,18 +44,9 @@ void subgena() {
         break;
       }
       while (code!=match){
-        for(int i=1;i<=2;i++){
-            printf("Not valid \n Retry again\n");
-            scanf("%d",&match); 
-        
-            if(code==match){ 
-              printf("Code valid\n\nApplying on your profile\n");
-              system("pause");
-              applying();
-              printf("\nUpdate sucessfully\n");
-            }
-            }
-           break; 
+          printf("Not valid \n Retry again\n");
+          goto hid; 
+               break; 
             
         }
 }
@@ -56,26 +55,28 @@ void subgena() {
 void buysub(){
     
     int price,mont;
+
     printf("\nEnter your Amount:\t");
     scanf("%d",&price);
-    if (price>=500&&price<=700)
+    if (price==500)
     {
-      printf("This code valid for one month\n ");
+      printf("This code wiil give you 10 percent discount\n ");
       subgena();
     }
     else if(price>=700&&price<=1000){
-      printf("This code valid for 3 month");
+      printf("This code wiil give you 25 percent discount\n");
       subgena();
       
       }
       else if(price>=1000&&price<=1500){
-        printf("This code Valid for 1 Year");
+        printf("This code will give you 45 percent discount \n");
         subgena();
       }
       else{ 
         printf("Eror!\nRetruning back phase:");
         waitingscrn(); 
-        return buysub();
+      
+
       }
 
 
@@ -87,18 +88,20 @@ void buysub(){
 
      
       
-void subareae(){
+void main(){
+
   system("cls");
   waitingscrn();
-     
+    
         printf( "\t-------------------------------------------------------------\n");
         printf("\t||------------------Subcription buying area--------------------||\n");
         printf( "\t||-------------------------------------------------------------||\n");
-  printf("chose your Subcriptions: \n1)1 month subcription price is 500-700 \n2)3month subcription price is 700-1000 \n3)1 Year subcription price1000-1500");
-  buysub();
-  system("cls");
+    printf("chose your Subcriptions: \n1)1 month subcription price is 500-700 \n2)3month subcription price is 700-1000 \n3)1 Year subcription price1000-1500");
+    buysub();
+    system("cls");
+
 }
-  
-      
+
+
 
 
