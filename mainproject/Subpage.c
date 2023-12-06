@@ -17,11 +17,7 @@ void subarea(){
   buysub();
   system("cls");
 }
-/*void main(){
-  system("clear");
-  subarea();
-  system("clear");
-}*/
+
 
 
 
