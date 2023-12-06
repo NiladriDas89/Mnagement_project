@@ -1,9 +1,8 @@
 #include"stdio.h"
-#include "LoginLogout.c"
-
 #include<windows.h>
+#include "LoginLogout.c"
 #include"subpage.c"
-#include"userint.c"
+#include"load.c"
 #include"wellcome.c"
 
 
