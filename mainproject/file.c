@@ -27,7 +27,9 @@ void filecreate() {
 
   return 0;
 }
-
+void main(){
+  filecreate();
+}
 
 void unfilewrite(char username[100],int wrt[200]) {
   // Declare a FILE type pointer variable to store reference of file, say FILE * fPtr = NULL;

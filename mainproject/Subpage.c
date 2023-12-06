@@ -3,58 +3,8 @@
 #include <time.h>
 #include<windows.h>
 #include"loag.c"
-
-void subarea(){
-  system("cls");
-  waitingscrn();
-     printf("--------------------------------------------------------------");
-        printf("\n|===============Wellcome to our C_COFFE SHOP================|\n" );
-        printf( "\n\t-------------------------------------------------------------\n");
-        printf( "\t-------------------------------------------------------------\n");
-        printf("\t||------------------Subcription buying area--------------------||\n");
-        printf( "\t||-------------------------------------------------------------||\n");
-  printf("chose your Subcriptions: \n1)1 month subcription price is 500-700 \n2)3month subcription price is 700-1000 \n3)1 Year subcription price1000-1500");
-  buysub();
-  system("cls");
-}
-
-
-
-
-void buysub(){
-    
-    int price,mont;
-    printf("\nEnter your Amount:\t");
-    scanf("%d",&price);
-    if (price>=500&&price<=700)
-    {
-      printf("This code valid for one month\n ");
-      subgen();
-    }
-    else if(price>=700&&price<=1000){
-      printf("This code valid for 3 month");
-      subgen();
-      
-      }
-      else if(price>=1000&&price<=1500){
-        printf("This code Valid for 1 Year");
-        subgen();
-      }
-      else{ 
-        printf("Eror!\nRetruning back phase:");
-        waitingscrn(); 
-        return buysub();
-      }
-
-
-
-
-}
-
-
-
 /* subgen() complete dont touch this code*/
-void subgen() {
+void subgena() {
 
   FILE *fp;
 
@@ -100,9 +50,54 @@ void subgen() {
            break; 
             
         }
+}
+ 
+
+void buysub(){
+    
+    int price,mont;
+    printf("\nEnter your Amount:\t");
+    scanf("%d",&price);
+    if (price>=500&&price<=700)
+    {
+      printf("This code valid for one month\n ");
+      subgena();
+    }
+    else if(price>=700&&price<=1000){
+      printf("This code valid for 3 month");
+      subgena();
+      
       }
+      else if(price>=1000&&price<=1500){
+        printf("This code Valid for 1 Year");
+        subgena();
+      }
+      else{ 
+        printf("Eror!\nRetruning back phase:");
+        waitingscrn(); 
+        return buysub();
+      }
+
+
+
+
+}
+
+
+
+     
       
-      
+void subareae(){
+  system("cls");
+  waitingscrn();
+     
+        printf( "\t-------------------------------------------------------------\n");
+        printf("\t||------------------Subcription buying area--------------------||\n");
+        printf( "\t||-------------------------------------------------------------||\n");
+  printf("chose your Subcriptions: \n1)1 month subcription price is 500-700 \n2)3month subcription price is 700-1000 \n3)1 Year subcription price1000-1500");
+  buysub();
+  system("cls");
+}
   
       
 
