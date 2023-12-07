@@ -2,12 +2,12 @@
 #include <stdlib.h>
 #include <time.h>
 #include<windows.h>
-#include"load.c"
+//#include"load.c"
 
 
 void subgena();
 void buysub();
-void subareae();
+void subareat();
 
 
 /* subgen() complete dont touch this code*/
@@ -40,7 +40,7 @@ void subgena() {
       while (code==match)
       { system("pause");
         printf("Code valid\nApplying on your profile\nUpdate sucessfully");
-        applying();
+        //applying();
         break;
       }
       while (code!=match){
@@ -54,8 +54,9 @@ void subgena() {
 
 void buysub(){
     
+      
     int price,mont;
-
+    ui:
     printf("\nEnter your Amount:\t");
     scanf("%d",&price);
     if (price==500)
@@ -74,8 +75,8 @@ void buysub(){
       }
       else{ 
         printf("Eror!\nRetruning back phase:");
-        waitingscrn(); 
-      
+       // waitingscrn(); 
+        goto ui;
 
       }
 
@@ -88,10 +89,10 @@ void buysub(){
 
      
       
-void main(){
+void subareat(){
 
   system("cls");
-  waitingscrn();
+ // waitingscrn();
     
         printf( "\t-------------------------------------------------------------\n");
         printf("\t||------------------Subcription buying area--------------------||\n");
