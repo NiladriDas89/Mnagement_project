@@ -1,8 +1,8 @@
 #include<stdio.h>
-#include"load.c"
+//#include"load.c"
 void well(){
        
-        waitingscrn();
+        //waitingscrn();
 
         
         system("cls");
