@@ -59,18 +59,18 @@ void buysub(){
     ui:
     printf("\nEnter your Amount:\t");
     scanf("%d",&price);
-    if (price==500)
+    if (price==700)
     {
       printf("This code wiil give you 10 percent discount\n ");
       subgena();
     }
-    else if(price>=700&&price<=1000){
+    else if(price==1000){
       printf("This code wiil give you 25 percent discount\n");
       subgena();
       
       }
-      else if(price>=1000&&price<=1500){
-        printf("This code will give you 45 percent discount \n");
+      else if(price==1500){
+        printf("This code will give you 50 percent discount \n");
         subgena();
       }
       else{ 
@@ -97,7 +97,7 @@ void subareat(){
         printf( "\t-------------------------------------------------------------\n");
         printf("\t||------------------Subcription buying area--------------------||\n");
         printf( "\t||-------------------------------------------------------------||\n");
-    printf("chose your Subcriptions: \n1)1 month subcription price is 500-700 \n2)3month subcription price is 700-1000 \n3)1 Year subcription price1000-1500");
+    printf("chose your Subcriptions: \n Subcription price is 1)700 \n 2) 1000 \n3) 1500\nEnter your Options:\t");
     buysub();
     system("cls");
 
