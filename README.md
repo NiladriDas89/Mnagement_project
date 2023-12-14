@@ -1,13 +1,13 @@
-# Mnagement_project
+<h6># Mnagement_project</h6>
  <br>Language: C
   <br>starting time 03/12/2023
    <br><b>End date:15/12/2023</b>
 
-   #How to run this code :-
+ <h1>  #How to run this code :-<br></h1>
    <b><i>Use the any (editor/gcc) on the "This file " .
-   Ex: gcc "this file" 
-   execute after you will get the exe file or eitheir you can get linux executable file 
-   than you can run by click or ./"file name" or output name that you have get by the out put 
+   <br>Ex: gcc "this file" 
+   <br>execute after you will get the exe file or eitheir you can get linux executable file 
+  <br> than you can run by click or ./"file name" or output name that you have get by the out put 
    </i></b>
  
  <b><br>About the Project:
