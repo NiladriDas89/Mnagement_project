@@ -1,7 +1,7 @@
 <h1># Mnagement_project</h1>
  <br>Language: C
   <br>starting time 03/12/2023
-   <br><b>End date:15/12/2023</b>
+   <br><b>End date:?/?/2023</b>
 
  <h1>  #How to run this code :-<br></h1>
    <b><i>Use the any (editor/gcc) on the "This file " .
